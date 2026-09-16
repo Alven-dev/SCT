@@ -1,0 +1,63 @@
+.cta {
+    position: relative;
+    margin: 0;
+    height: 85vh;
+    width: 100vw;
+}
+
+.cta-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cta-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.hero-title {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10rem;
+    z-index: 2;
+    color: #fff;
+}
+
+.hero-title h1 {
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: 'Source Serif 4';
+}
+
+.hero-title h2 {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+}
+
+.about-short {
+    display: flex;
+    flex-direction: row;
+    background-color: #d5d1cf;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
+}
+
+.about-container-one {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.about-container-two {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

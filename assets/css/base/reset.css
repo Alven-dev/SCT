@@ -2,6 +2,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-size: 10px;
 }
 
 img, picture, video, canvas, svg {
@@ -30,6 +31,7 @@ html {
 body {
     min-height: 100vh;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p {

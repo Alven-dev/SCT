@@ -46,6 +46,8 @@
 .about-short {
     display: flex;
     flex-direction: row;
+    padding: 6rem 10rem;
+    gap: 6rem;
     background-color: #d5d1cf;
     background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
 }
@@ -60,4 +62,65 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+}
+
+.about h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 4rem;
+    color: #400009;
+    margin-bottom: 0.8rem;
+    border-bottom: 2px solid #b08d4f;
+    display: inline-block;
+}
+
+.about p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #3a3530;
+    margin-top: 2rem;
+}
+
+.about p::first-letter {
+    font-family: 'Source Serif 4', serif;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #400009;
+    float: left;
+    line-height: 0.8;
+    margin-right: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.card-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: #fbf1e7;
+    padding: 3rem;
+    border-radius: 4px;
+}
+
+.card img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.card h4 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.8rem;
+    color: #400009;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #3a3530;
 }

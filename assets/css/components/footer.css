@@ -1,0 +1,188 @@
+footer {
+    background-color: #0b1626;
+    font-family: "EB Garamond", Georgia, serif;
+}
+
+.footer-container {
+    width: 100%;
+}
+
+
+
+.footer-cta {
+    max-width: 82rem;
+    margin: 0 auto;
+    padding: 9rem 3rem 10rem;
+    text-align: center;
+}
+
+.footer-cta h2 {
+    margin-bottom: 3rem;
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 5.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.footer-cta p {
+    margin-bottom: 4.4rem;
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 2rem;
+    line-height: 1.7;
+    color: #a9c4e8;
+}
+
+.footer-cta button {
+    padding: 2rem 4.4rem;
+    border: none;
+    background-color: #7a5a18;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.footer-cta button:hover {
+    background-color: #946c1c;
+}
+
+.footer-cta button:focus-visible {
+    outline: 2px solid #a9c4e8;
+    outline-offset: 3px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 6rem;
+    padding: 7rem max(4rem, calc((100% - 1280px) / 2)) 9rem;
+    border-top: 1px solid #2a3446;
+}
+
+.footer-nav-info {
+    flex: 1.5;
+}
+
+.footer-nav-main,
+.footer-nav-documents {
+    flex: 1;
+}
+
+.footer-nav-info h3 {
+    margin-bottom: 2.6rem;
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #8a661a;
+}
+
+.footer-nav-info p {
+    margin-bottom: 0.8rem;
+    max-width: 36rem;
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: #5b6b82;
+}
+
+.footer-nav-info p:last-child {
+    max-width: none;
+}
+
+.footer-nav-main h4,
+.footer-nav-documents h4 {
+    margin-bottom: 2.6rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #8a661a;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav li + li {
+    margin-top: 1.7rem;
+}
+
+.footer-nav a {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 1.8rem;
+    color: #5b6b82;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
+    color: #a9c4e8;
+}
+
+.footer-copyrights {
+    padding: 3rem 4rem 4rem;
+    text-align: center;
+}
+
+.footer-copyrights p {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #3f4d63;
+}
+
+/* @media (max-width: 900px) {
+    .footer-cta h2 {
+        font-size: 4.2rem;
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        gap: 5rem 4rem;
+    }
+
+    .footer-nav-info {
+        flex: 1 1 100%;
+    }
+
+    .footer-nav-info p {
+        max-width: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer-cta {
+        padding: 6rem 2.4rem 7rem;
+    }
+
+    .footer-cta h2 {
+        font-size: 3.6rem;
+    }
+
+    .footer-cta p {
+        font-size: 1.8rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 5rem 2.4rem 6rem;
+    }
+
+    .footer-nav-info,
+    .footer-nav-main,
+    .footer-nav-documents {
+        flex: none;
+    }
+
+    .footer-copyrights {
+        padding: 2.4rem 2.4rem 3.6rem;
+    }
+} */

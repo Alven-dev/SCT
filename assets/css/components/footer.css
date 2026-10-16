@@ -138,7 +138,7 @@ footer {
     color: #3f4d63;
 }
 
-/* @media (max-width: 900px) {
+@media (max-width: 900px) {
     .footer-cta h2 {
         font-size: 4.2rem;
     }
@@ -185,4 +185,4 @@ footer {
     .footer-copyrights {
         padding: 2.4rem 2.4rem 3.6rem;
     }
-} */
+}

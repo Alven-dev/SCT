@@ -64,7 +64,7 @@
 .about-short {
     display: flex;
     flex-direction: row;
-    padding: 6rem 10rem;
+    padding: 5rem;
     gap: 6rem;
     background-color: #d5d1cf;
     background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");

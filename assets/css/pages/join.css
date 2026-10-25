@@ -91,7 +91,7 @@
     border-radius: 1.6rem;
     box-shadow: 0 2rem 4rem rgba(64, 0, 9, 0.25);
     background: linear-gradient(to top, rgba(42, 10, 16, 0.92) 0%, rgba(42, 10, 16, 0) 55%),
-                url('/assets/images/katedra.jpg') center / cover no-repeat;
+                url('../../images/katedra.jpg') center / cover no-repeat;
 }
 
 .main-info-box-two p {

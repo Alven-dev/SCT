@@ -1,20 +1,9 @@
-
-/* ==========================================================================
-   DOŁĄCZ DO CHÓRU – .main-info + .join-voices
-   1rem = 10px (globalny reset ustawia font-size: 10px na każdym elemencie,
-   dlatego rozmiar tekstu jest podany wszędzie, także na strong, li i span)
-   ========================================================================== */
-
-
-/* ==========================================================================
-   SEKCJA 1: .main-info (hero z rekrutacją)
-   ========================================================================== */
-
 .main-info {
     padding: 5rem 10rem;
     display: flex;
     flex-direction: column;
     height: 75rem;
+    background-color: #F0E4DB;
 }
 
 .container-main-info {
@@ -25,7 +14,6 @@
     gap: 6rem;
 }
 
-/* --- lewa kolumna --- */
 .main-info-box-one {
     display: flex;
     flex-direction: column;
@@ -33,7 +21,6 @@
     width: 60%;
 }
 
-/* plakietka "Rekrutacja do chóru katedralnego" (1. div w box-one) */
 .main-info-box-one > div:nth-child(1) {
     display: flex;
     align-items: center;
@@ -52,7 +39,7 @@
 }
 
 .main-info-box-one > div:nth-child(1) p {
-    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -60,10 +47,10 @@
     color: #7a5a18;
 }
 
-/* nagłówek i opis (2. div) */
+
 .main-info-box-one h2 {
     margin-bottom: 2.4rem;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 5.4rem;
     font-weight: 700;
     line-height: 1.15;
@@ -72,13 +59,13 @@
 
 .main-info-box-one article p {
     max-width: 62rem;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 1.9rem;
     line-height: 1.8;
     color: #3d4655;
 }
 
-/* trzy karty (3. div) – na razie puste, więc tylko układ */
+
 .main-info-box-one > div:nth-child(3) {
     display: flex;
     flex-direction: row;
@@ -92,7 +79,7 @@
     flex: 1;
 }
 
-/* --- prawa kolumna: zdjęcie z podpisem --- */
+
 .main-info-box-two {
     display: flex;
     flex-direction: column;
@@ -103,13 +90,12 @@
     overflow: hidden;
     border-radius: 1.6rem;
     box-shadow: 0 2rem 4rem rgba(64, 0, 9, 0.25);
-    /* podmień ścieżkę na swoje zdjęcie katedry */
     background: linear-gradient(to top, rgba(42, 10, 16, 0.92) 0%, rgba(42, 10, 16, 0) 55%),
-                url('../assets/images/choir.jpg') center / cover no-repeat;
+                url('/assets/images/katedra.jpg') center / cover no-repeat;
 }
 
 .main-info-box-two p {
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 2.6rem;
     font-weight: 600;
     line-height: 1.35;
@@ -117,21 +103,11 @@
 }
 
 
-/* ==========================================================================
-   SEKCJA 2: .join-voices (kogo szukamy)
-   ========================================================================== */
-
 .join-voices {
     padding: 8rem 10rem;
 }
 
-.voices-header,
-.voices-cards,
-.voices-info {
-   
-}
 
-/* --- nagłówek --- */
 .voices-header {
     text-align: center;
 }
@@ -139,7 +115,7 @@
 .voices-header > span {
     display: block;
     margin-bottom: 1.6rem;
-    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
     font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0.2em;
@@ -155,7 +131,7 @@
 
 .voices-title {
     margin-bottom: 2rem;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 4.4rem;
     font-weight: 700;
     line-height: 1.2;
@@ -165,20 +141,18 @@
 .voices-intro {
     max-width: 80rem;
     margin: 0 auto 7rem;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 1.9rem;
     line-height: 1.7;
     color: #4d5666;
 }
 
-/* --- karty głosów --- */
 .voices-cards {
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
-/* zakres selektora: w innej sekcji też istnieje .card */
 .voices-cards .card {
     position: relative;
     display: flex;
@@ -190,7 +164,6 @@
     border-radius: 1.2rem;
 }
 
-/* tenory i basy (karty z plakietką) */
 .voices-cards .card:has(.in-need) {
     background-color: #F0E4DB;
     box-shadow: 0 1rem 2.4rem rgba(64, 0, 9, 0.12);
@@ -206,7 +179,7 @@
 }
 
 .voices-cards .in-need p {
-    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -214,10 +187,9 @@
     color: #ffffff;
 }
 
-/* "Głos żeński wysoki" */
 .voices-cards .card > span {
     margin-bottom: 1.2rem;
-    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -227,7 +199,7 @@
 
 .voices-cards .card h3 {
     margin-bottom: 1.4rem;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 2.8rem;
     font-weight: 700;
     color: #2a0a10;
@@ -235,13 +207,12 @@
 
 .voices-cards .card > p {
     flex: 1;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 1.7rem;
     line-height: 1.7;
     color: #4d5666;
 }
 
-/* "Status: nabór otwarty" / "Priorytet: ..." */
 .voices-cards .status {
     display: flex;
     flex-wrap: wrap;
@@ -253,7 +224,7 @@
 }
 
 .voices-cards .status h4 {
-    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 0.08em;
@@ -262,7 +233,7 @@
 }
 
 .voices-cards .status span {
-    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.06em;
@@ -270,7 +241,6 @@
     color: #400009;
 }
 
-/* --- dwa panele informacyjne --- */
 .voices-info {
     display: flex;
     flex-direction: row;
@@ -294,14 +264,14 @@
 
 .info-box h3 {
     margin-bottom: 2.4rem;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 2.6rem;
     font-weight: 700;
     color: #2a0a10;
 }
 
 .info-box p {
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 1.7rem;
     line-height: 1.8;
     color: #4d5666;
@@ -311,7 +281,6 @@
     margin-top: 1.8rem;
 }
 
-/* akapit z dużą inicjałą */
 .info-lead {
     font-size: 1.9rem;
     color: #2d3748;
@@ -323,17 +292,6 @@
     color: #400009;
 }
 
-.info-lead::first-letter {
-    float: left;
-    padding: 0.4rem 1rem 0 0;
-    /* font-family: 'EB Garamond'; */
-    font-size: 7rem;
-    font-weight: 700;
-    line-height: 0.8;
-    color: #400009;
-}
-
-/* kafelki "Zaczynamy od podstaw" */
 .info-tags {
     display: flex;
     flex-direction: row;
@@ -351,7 +309,7 @@
     background-color: #ffffff;
     border: 1px solid #F0E0D6;
     border-radius: 0.8rem;
-    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.4;
@@ -372,7 +330,6 @@
     color: #8a661a;
 }
 
-/* lista "Co jest dla nas ważne" */
 .info-list {
     display: flex;
     flex-direction: column;
@@ -385,7 +342,7 @@
     display: flex;
     align-items: flex-start;
     gap: 1.4rem;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 1.7rem;
     line-height: 1.6;
     color: #2d3748;
@@ -401,13 +358,12 @@
     border-radius: 50%;
 }
 
-/* "Nie zwlekaj - Twoje miejsce czeka w chórze!" */
 .info-box .info-note {
     margin-top: auto;
     padding: 1.6rem 2rem;
     background-color: #E9DDD3;
     border-radius: 0.6rem;
-    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -417,10 +373,398 @@
     color: #6b5a55;
 }
 
+.rehearsals {
+    padding: 8rem 5rem;
+    background-color: #FBF1EA;
+}
 
-/* ==========================================================================
-   RESPONSYWNOŚĆ
-   ========================================================================== */
+.rehearsals-header,
+.rehearsals-cards {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rehearsals-header {
+    text-align: center;
+}
+
+.rehearsals-header > span {
+    display: block;
+    margin-bottom: 1.6rem;
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8a661a;
+}
+
+.rehearsals-title {
+    margin-bottom: 2rem;
+    font-family: 'EB Garamond';
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #2a0a10;
+}
+
+.rehearsals-intro {
+    max-width: 70rem;
+    margin: 0 auto 6rem;
+    font-family: 'EB Garamond';
+    font-size: 1.9rem;
+    line-height: 1.7;
+    color: #4d5666;
+}
+
+.rehearsals-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.rehearsals-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 3.6rem;
+    background-color: #ffffff;
+    border-radius: 1.6rem;
+    box-shadow: 0 0.4rem 2rem rgba(64, 0, 9, 0.08);
+}
+
+.rehearsals-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2.4rem;
+    background-color: #F3E6DF;
+    border-radius: 50%;
+}
+
+.rehearsals-icon img {
+    width: 2.2rem;
+    height: 2.2rem;
+    object-fit: contain;
+}
+
+.rehearsals-card h3 {
+    margin-bottom: 2.4rem;
+    font-family: 'EB Garamond';
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #2a0a10;
+}
+
+.rehearsals-card > p {
+    font-family: 'EB Garamond';
+    font-size: 1.7rem;
+    line-height: 1.7;
+    color: #4d5666;
+}
+
+.rehearsals-day {
+    margin-bottom: 1.6rem;
+    padding: 1.8rem 2rem;
+    background-color: #FBEFE8;
+    border-radius: 0.8rem;
+}
+
+.rehearsals-day span {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7a5a18;
+}
+
+.rehearsals-day p {
+    font-family: 'EB Garamond';
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2a0a10;
+}
+
+.rehearsals-card .rehearsals-note {
+    margin-top: auto;
+    padding-top: 2.4rem;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #6b5a55;
+}
+
+.rehearsals-address strong {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2a0a10;
+}
+
+.rehearsals-hint {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+    padding: 1.8rem 2rem;
+    background-color: #FBEFE8;
+    border-radius: 0.8rem;
+}
+
+.rehearsals-hint span {
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7a5a18;
+}
+
+.rehearsals-hint p {
+    margin-top: 0.8rem;
+    font-family: 'EB Garamond';
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #4d5666;
+}
+
+.rehearsal-location-map {
+    position: relative;
+    flex: none;
+    height: 20rem;
+    margin-top: auto;
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+
+.rehearsal-location-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-expand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: zoom-in;
+    transition: background-color 0.2s ease;
+}
+ 
+.map-expand:hover {
+    background-color: rgba(64, 0, 9, 0.12);
+}
+ 
+.map-expand:focus-visible {
+    outline: 2px solid #400009;
+    outline-offset: -2px;
+}
+
+.map-dialog {
+    margin: auto;
+    width: 90vw;
+    max-width: 120rem;
+    height: 80vh;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    border-radius: 1.2rem;
+    background-color: #ffffff;
+}
+ 
+.map-dialog::backdrop {
+    background-color: rgba(42, 10, 16, 0.75);
+}
+ 
+.map-dialog-frame {
+    width: 100%;
+    height: 100%;
+}
+ 
+.map-dialog-frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+ 
+.map-dialog-close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    z-index: 1;
+    width: 4rem;
+    height: 4rem;
+    background-color: #400009;
+    border: none;
+    border-radius: 50%;
+    font-size: 2.6rem;
+    line-height: 1;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+ 
+.map-dialog-close:hover {
+    background-color: #650717;
+}
+ 
+body:has(.map-dialog[open]) {
+    overflow: hidden;
+}
+
+.rehearsals-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-top: 2.4rem;
+    list-style: none;
+}
+
+.rehearsals-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    font-family: 'EB Garamond';
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: #2d3748;
+}
+
+.rehearsals-list li::before {
+    content: '✓';
+    flex: none;
+    font-size: 1.5rem;
+    color: #8a661a;
+}
+
+.join-contact {
+    padding: 8rem 5rem;
+    background-color: #400009;
+}
+
+.join-contact-header,
+.join-contact-cards {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join-contact-header > span {
+    display: block;
+    margin-bottom: 1.6rem;
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #E8C37A;
+}
+
+.join-contact-title {
+    max-width: 70rem;
+    margin-bottom: 2rem;
+    font-family: 'EB Garamond';
+    font-size: 4.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.join-contact-intro {
+    max-width: 70rem;
+    font-family: 'EB Garamond';
+    font-size: 1.9rem;
+    line-height: 1.7;
+    color: #E7B9B0;
+}
+
+.join-contact-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.join-contact-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 3.6rem;
+    background-color: #5a0414;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.2rem;
+}
+
+.join-contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2.4rem;
+    background-color: #F5D7A1;
+    border-radius: 50%;
+}
+
+.join-contact-icon img {
+    width: 2.2rem;
+    height: 2.2rem;
+    object-fit: contain;
+}
+
+.join-contact-card > span {
+    margin-bottom: 1rem;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #E8C37A;
+}
+
+.join-contact-value {
+    margin-bottom: 1.6rem;
+    font-family: 'EB Garamond';
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+    overflow-wrap: anywhere;
+}
+
+.join-contact-text {
+    margin-bottom: 2.8rem;
+    font-family: 'EB Garamond';
+    font-size: 1.7rem;
+    line-height: 1.7;
+    color: #E7B9B0;
+}
+
+.join-contact-link {
+    margin-top: auto;
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+.join-contact-link:hover {
+    color: #E8C37A;
+}
 
 @media (max-width: 1024px) {
     .main-info {
@@ -462,6 +806,23 @@
 
     .voices-info {
         flex-direction: column;
+    }
+    .rehearsals,
+    .join-contact {
+        padding: 6rem 3rem;
+    }
+
+    .rehearsals-cards,
+    .join-contact-cards {
+        flex-direction: column;
+    }
+
+    .rehearsals-title {
+        font-size: 3.6rem;
+    }
+
+    .join-contact-title {
+        font-size: 3.8rem;
     }
 }
 
@@ -506,5 +867,35 @@
 
     .info-tags {
         flex-direction: column;
+    }
+    .rehearsals,
+    .join-contact {
+        padding: 5rem 2rem;
+    }
+
+    .rehearsals-title {
+        font-size: 3.2rem;
+    }
+
+    .rehearsals-intro {
+        margin-bottom: 4rem;
+        font-size: 1.7rem;
+    }
+
+    .rehearsals-card,
+    .join-contact-card {
+        padding: 2.8rem 2.4rem;
+    }
+
+    .join-contact-title {
+        font-size: 3.2rem;
+    }
+
+    .join-contact-intro {
+        font-size: 1.7rem;
+    }
+
+    .join-contact-value {
+        font-size: 2.6rem;
     }
 }

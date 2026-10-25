@@ -65,7 +65,6 @@
     color: #3d4655;
 }
 
-
 .main-info-box-one > div:nth-child(3) {
     display: flex;
     flex-direction: row;
@@ -387,6 +386,7 @@
 
 .rehearsals-header {
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .rehearsals-header > span {
@@ -407,15 +407,6 @@
     font-weight: 700;
     line-height: 1.2;
     color: #2a0a10;
-}
-
-.rehearsals-intro {
-    max-width: 70rem;
-    margin: 0 auto 6rem;
-    font-family: 'EB Garamond';
-    font-size: 1.9rem;
-    line-height: 1.7;
-    color: #4d5666;
 }
 
 .rehearsals-cards {

@@ -1,7 +1,7 @@
 .cta {
     position: relative;
     margin: 0;
-    height: 85vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -38,19 +38,6 @@
     padding: 0 10rem;
     z-index: 2;
     color: #fff;
-}
-
-.hero-title::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background: radial-gradient(
-        ellipse at center,
-        rgba(11, 22, 38, 0.8) 0%,
-        rgba(11, 22, 38, 0.6) 10%,
-        rgba(11, 22, 38, 0.25) 20%
-    );
 }
 
 .hero-title h1,

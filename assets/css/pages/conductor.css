@@ -57,30 +57,15 @@
     font-size: 2rem;
 }
 
-/* ==========================================================================
-   PODSTRONA DYRYGENT – .conductor + .team
-   (sekcja .cta korzysta z istniejących styli, bez zmian)
-   1rem = 10px, rozmiar tekstu podany na każdym elemencie (reset)
-   ========================================================================== */
-
-
-/* ==========================================================================
-   SEKCJA 1: .conductor
-   ========================================================================== */
-
 .conductor {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 7rem;
-    /* treść w kontenerze 1200px, tło na całą szerokość */
     padding: 8rem max(5rem, calc((100% - 1200px) / 2));
     background-color: #FBF1EA;
 }
 
-/* --- zdjęcie + wideo ---
-   Zdjęcie zostaje na spodzie i nadaje wymiary, wideo leży na nim
-   i znika (opacity), odsłaniając zdjęcie. */
 .conductor-photo {
     position: relative;
     flex: none;
@@ -102,7 +87,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* object-position: center 30%; */   /* odkomentuj, jeśli kadr trzeba przesunąć */
+    object-position: center 30%;
     border-radius: 0.8rem;
     opacity: 1;
     transition: opacity 0.8s ease;
@@ -112,7 +97,6 @@
     opacity: 0;
 }
 
-/* złota plakietka z nutą w prawym dolnym rogu */
 .conductor-badge {
     position: absolute;
     right: 0;
@@ -132,7 +116,6 @@
     object-fit: contain;
 }
 
-/* --- przycisk mute/unmute (lewy dolny róg) --- */
 .conductor-sound {
     position: absolute;
     left: 1.6rem;
@@ -166,7 +149,6 @@
     height: 2rem;
 }
 
-/* która ikona jest widoczna – zależy od aria-pressed ustawianego w JS */
 .conductor-sound .conductor-sound-on {
     display: none;
 }
@@ -179,13 +161,10 @@
     display: none;
 }
 
-/* tylko przy ograniczonym ruchu: wideo nie gra, więc przycisk dźwięku jest zbędny */
 .conductor-photo.is-static .conductor-sound {
     display: none;
 }
 
-
-/* --- tekst --- */
 .conductor-info {
     flex: 1;
 }
@@ -193,7 +172,7 @@
 .conductor-label {
     display: block;
     margin-bottom: 1.6rem;
-    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
     font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 0.2em;
@@ -203,7 +182,7 @@
 
 .conductor-name {
     margin-bottom: 3rem;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 4.4rem;
     font-weight: 700;
     line-height: 1.2;
@@ -212,7 +191,7 @@
 
 .conductor-info p {
     max-width: 70rem;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 1.8rem;
     line-height: 1.8;
     color: #4d5666;
@@ -222,7 +201,6 @@
     margin-top: 2rem;
 }
  
-/* która ikona jest widoczna – zależy od aria-pressed ustawianego w JS */
 .conductor-sound .conductor-sound-on {
     display: none;
 }
@@ -234,11 +212,6 @@
 .conductor-sound[aria-pressed="true"] .conductor-sound-off {
     display: none;
 }
-
-
-/* ==========================================================================
-   SEKCJA 2: .team (zespół dzisiaj)
-   ========================================================================== */
 
 .team {
     padding: 8rem max(5rem, calc((100% - 1200px) / 2));
@@ -250,13 +223,12 @@
 }
 
 .team-title {
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 3.6rem;
     font-weight: 700;
     color: #2a0a10;
 }
 
-/* złota kreska pod tytułem */
 .team-title::after {
     content: '';
     display: block;
@@ -266,7 +238,6 @@
     background-color: #8a661a;
 }
 
-/* --- trzy liczby --- */
 .team-stats {
     display: flex;
     flex-direction: row;
@@ -283,7 +254,7 @@
 }
 
 .team-stat-number {
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 6rem;
     font-weight: 400;
     line-height: 1;
@@ -292,7 +263,7 @@
 
 .team-stat-label {
     margin: 1.4rem 0 1.6rem;
-    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat';
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.15em;
@@ -302,13 +273,12 @@
 
 .team-stat-text {
     max-width: 30rem;
-    /* font-family: 'EB Garamond'; */
+    font-family: 'EB Garamond';
     font-size: 1.7rem;
     line-height: 1.6;
     color: #4d5666;
 }
 
-/* --- galeria zdjęć: duże | dwa małe jedno pod drugim | wysokie --- */
 .team-gallery {
     display: flex;
     flex-direction: row;
@@ -349,11 +319,7 @@
     flex: 1;
 }
 
-
-/* ==========================================================================
-   RESPONSYWNOŚĆ
-   ========================================================================== */
-   @media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
     .conductor-video,
     .conductor-sound {
         transition: none;

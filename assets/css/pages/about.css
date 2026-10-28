@@ -1,0 +1,441 @@
+/* ==========================================================================
+   PODSTRONA O NAS – prefiks .choir-*
+   (prefiks celowo inny niż .about-*, które masz już na stronie głównej)
+   Hero korzysta z istniejących stylów .cta.
+   1rem = 10px, rozmiar tekstu podany na każdym elemencie (reset)
+   ========================================================================== */
+
+
+/* ==========================================================================
+   WSPÓLNE ELEMENTY
+   ========================================================================== */
+
+.choir-label {
+    display: block;
+    margin-bottom: 1.6rem;
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8a661a;
+}
+
+.choir-title {
+    margin-bottom: 2.4rem;
+    font-family: 'EB Garamond';
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #2a0a10;
+}
+
+.choir-header {
+    max-width: 70rem;
+    margin: 0 auto 6rem;
+    text-align: center;
+}
+
+.choir-header .choir-title {
+    margin-bottom: 0;
+}
+
+.choir-lead {
+    margin-top: 2rem;
+    font-family: 'EB Garamond';
+    font-size: 1.9rem;
+    line-height: 1.7;
+    color: #4d5666;
+}
+
+
+/* ==========================================================================
+   1. KIM JESTEŚMY
+   ========================================================================== */
+
+.choir-intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+    padding: 9rem max(5rem, calc((100% - 1200px) / 2));
+    background-color: #FBF1EA;
+}
+
+.choir-intro-text {
+    flex: 1;
+}
+
+.choir-intro-text p {
+    font-family: 'EB Garamond';
+    font-size: 1.9rem;
+    line-height: 1.8;
+    color: #4d5666;
+}
+
+.choir-intro-text p + p {
+    margin-top: 2rem;
+}
+
+.choir-quote {
+    margin-top: 3.6rem;
+    padding-left: 2.4rem;
+    border-left: 3px solid #8a661a;
+    font-family: 'EB Garamond';
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: #400009;
+}
+
+.choir-intro-photo {
+    position: relative;
+    z-index: 0;
+    flex: 1;
+}
+
+/* złota ramka przesunięta za zdjęcie */
+.choir-intro-photo::after {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #8a661a;
+    border-radius: 0.8rem;
+}
+
+.choir-intro-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    /* object-position: 50% 30%; */
+    border-radius: 0.8rem;
+    box-shadow: 0 1.5rem 4rem rgba(64, 0, 9, 0.2);
+}
+
+
+/* ==========================================================================
+   2. CO NAS ŁĄCZY
+   ========================================================================== */
+
+.choir-values {
+    padding: 9rem max(5rem, calc((100% - 1200px) / 2));
+    background-color: #F3E9E2;
+}
+
+.choir-values-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.choir-value {
+    flex: 1;
+    padding: 4rem 3.6rem;
+    background-color: #ffffff;
+    border-radius: 1.6rem;
+    box-shadow: 0 0.4rem 2rem rgba(64, 0, 9, 0.08);
+}
+
+.choir-value-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.6rem;
+    height: 5.6rem;
+    margin-bottom: 2.4rem;
+    background-color: #F3E6DF;
+    border-radius: 50%;
+}
+
+.choir-value-icon img {
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: contain;
+}
+
+.choir-value h3 {
+    margin-bottom: 1.6rem;
+    font-family: 'EB Garamond';
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2a0a10;
+}
+
+.choir-value p {
+    font-family: 'EB Garamond';
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: #4d5666;
+}
+
+
+/* ==========================================================================
+   3. HISTORIA (oś czasu)
+   ========================================================================== */
+
+.choir-history {
+    padding: 9rem max(5rem, calc((100% - 1200px) / 2));
+    background-color: #FBF1EA;
+}
+
+.choir-timeline {
+    display: flex;
+    flex-direction: column;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.choir-timeline-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.choir-timeline-year {
+    flex: none;
+    width: 16rem;
+    padding-right: 4rem;
+    font-family: 'EB Garamond';
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: right;
+    color: #8a661a;
+}
+
+/* pionowa linia to lewa krawędź treści, kropka leży na niej */
+.choir-timeline-body {
+    position: relative;
+    flex: 1;
+    padding: 0 0 6rem 4rem;
+    border-left: 2px solid #D9C3A5;
+}
+
+.choir-timeline-item:last-child .choir-timeline-body {
+    padding-bottom: 0;
+}
+
+.choir-timeline-body::before {
+    content: '';
+    position: absolute;
+    top: 0.8rem;
+    left: -0.8rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #8a661a;
+    border: 3px solid #FBF1EA;
+    border-radius: 50%;
+    box-sizing: content-box;
+}
+
+.choir-timeline-body h3 {
+    margin-bottom: 1rem;
+    font-family: 'EB Garamond';
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #2a0a10;
+}
+
+.choir-timeline-body p {
+    max-width: 52rem;
+    font-family: 'EB Garamond';
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: #4d5666;
+}
+
+
+/* ==========================================================================
+   4. POSŁUCHAJ NAS
+   ========================================================================== */
+
+.choir-listen {
+    padding: 9rem max(5rem, calc((100% - 1200px) / 2));
+    background-color: #400009;
+}
+
+.choir-listen .choir-label {
+    color: #E8C37A;
+}
+
+.choir-listen .choir-title {
+    color: #ffffff;
+}
+
+.choir-listen .choir-lead {
+    color: #E7B9B0;
+}
+
+.choir-video {
+    max-width: 96rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 1.2rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+}
+
+.choir-video iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+
+/* ==========================================================================
+   5. NASZ DOM: KATEDRA
+   ========================================================================== */
+
+.choir-cathedral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+    padding: 9rem max(5rem, calc((100% - 1200px) / 2));
+    background-color: #FBF1EA;
+}
+
+.choir-cathedral-photo {
+    flex: 1;
+}
+
+.choir-cathedral-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    /* object-position: 50% 40%; */
+    border-radius: 0.8rem;
+    box-shadow: 0 1.5rem 4rem rgba(64, 0, 9, 0.2);
+}
+
+.choir-cathedral-text {
+    flex: 1;
+}
+
+.choir-cathedral-text > p {
+    font-family: 'EB Garamond';
+    font-size: 1.9rem;
+    line-height: 1.8;
+    color: #4d5666;
+}
+
+.choir-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3.2rem;
+    list-style: none;
+}
+
+.choir-facts li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 2rem 2.4rem;
+    background-color: #F1E6DE;
+    border-left: 3px solid #8a661a;
+    border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.choir-facts strong {
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7a5a18;
+}
+
+.choir-facts span {
+    font-family: 'EB Garamond';
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #2d3748;
+}
+
+
+/* ==========================================================================
+   RESPONSYWNOŚĆ
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .choir-intro,
+    .choir-cathedral {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6rem;
+        padding: 6rem 3rem;
+    }
+
+    /* na telefonie zdjęcie katedry ma być nad tekstem, tak jak w HTML */
+    .choir-intro-photo {
+        max-width: 50rem;
+        margin: 0 auto 2rem;
+    }
+
+    .choir-values,
+    .choir-history,
+    .choir-listen {
+        padding: 6rem 3rem;
+    }
+
+    .choir-header {
+        margin-bottom: 4rem;
+    }
+
+    .choir-values-cards {
+        flex-direction: column;
+    }
+
+    .choir-timeline-year {
+        width: 12rem;
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .choir-intro,
+    .choir-values,
+    .choir-history,
+    .choir-listen,
+    .choir-cathedral {
+        padding: 5rem 2rem;
+    }
+
+    .choir-title {
+        font-size: 3.2rem;
+    }
+
+    .choir-quote {
+        font-size: 2.2rem;
+    }
+
+    .choir-value {
+        padding: 3rem 2.4rem;
+    }
+
+    /* oś czasu: rok nad treścią */
+    .choir-timeline-item {
+        flex-direction: column;
+    }
+
+    .choir-timeline-year {
+        width: auto;
+        padding: 0 0 1rem 2.4rem;
+        text-align: left;
+    }
+
+    .choir-timeline-body {
+        padding-left: 2.4rem;
+    }
+
+    .choir-intro-photo::after {
+        top: 1.2rem;
+        left: 1.2rem;
+    }
+}

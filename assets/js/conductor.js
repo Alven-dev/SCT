@@ -46,7 +46,6 @@
             video.play().catch(function () {});
             startSwitching();
         } else {
-            video.pause();
             stopSwitching();
         }
     }, { threshold: 0.3 }).observe(box);

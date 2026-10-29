@@ -1,14 +1,20 @@
-/* ==========================================================================
-   PODSTRONA O NAS – prefiks .choir-*
-   (prefiks celowo inny niż .about-*, które masz już na stronie głównej)
-   Hero korzysta z istniejących stylów .cta.
-   1rem = 10px, rozmiar tekstu podany na każdym elemencie (reset)
-   ========================================================================== */
+.cta.cta-banner {
+    height: auto;
+}
 
+.cta-banner .cta-img {
+    height: auto;
+}
 
-/* ==========================================================================
-   WSPÓLNE ELEMENTY
-   ========================================================================== */
+.cta-banner .cta-img img {
+    height: auto;
+    min-height: 36rem;
+    object-position: 50% 50%;
+}
+
+.cta-banner .cta-img::after {
+    background-color: rgba(42, 10, 16, 0.6);
+}
 
 .choir-label {
     display: block;
@@ -47,11 +53,6 @@
     line-height: 1.7;
     color: #4d5666;
 }
-
-
-/* ==========================================================================
-   1. KIM JESTEŚMY
-   ========================================================================== */
 
 .choir-intro {
     display: flex;
@@ -94,7 +95,6 @@
     flex: 1;
 }
 
-/* złota ramka przesunięta za zdjęcie */
 .choir-intro-photo::after {
     content: '';
     position: absolute;
@@ -116,11 +116,6 @@
     border-radius: 0.8rem;
     box-shadow: 0 1.5rem 4rem rgba(64, 0, 9, 0.2);
 }
-
-
-/* ==========================================================================
-   2. CO NAS ŁĄCZY
-   ========================================================================== */
 
 .choir-values {
     padding: 9rem max(5rem, calc((100% - 1200px) / 2));
@@ -173,11 +168,6 @@
     color: #4d5666;
 }
 
-
-/* ==========================================================================
-   3. HISTORIA (oś czasu)
-   ========================================================================== */
-
 .choir-history {
     padding: 9rem max(5rem, calc((100% - 1200px) / 2));
     background-color: #FBF1EA;
@@ -207,7 +197,6 @@
     color: #8a661a;
 }
 
-/* pionowa linia to lewa krawędź treści, kropka leży na niej */
 .choir-timeline-body {
     position: relative;
     flex: 1;
@@ -248,11 +237,6 @@
     color: #4d5666;
 }
 
-
-/* ==========================================================================
-   4. POSŁUCHAJ NAS
-   ========================================================================== */
-
 .choir-listen {
     padding: 9rem max(5rem, calc((100% - 1200px) / 2));
     background-color: #400009;
@@ -284,11 +268,6 @@
     aspect-ratio: 16 / 9;
     border: 0;
 }
-
-
-/* ==========================================================================
-   5. NASZ DOM: KATEDRA
-   ========================================================================== */
 
 .choir-cathedral {
     display: flex;
@@ -358,11 +337,6 @@
     color: #2d3748;
 }
 
-
-/* ==========================================================================
-   RESPONSYWNOŚĆ
-   ========================================================================== */
-
 @media (max-width: 1024px) {
     .choir-intro,
     .choir-cathedral {
@@ -372,7 +346,6 @@
         padding: 6rem 3rem;
     }
 
-    /* na telefonie zdjęcie katedry ma być nad tekstem, tak jak w HTML */
     .choir-intro-photo {
         max-width: 50rem;
         margin: 0 auto 2rem;
@@ -419,7 +392,6 @@
         padding: 3rem 2.4rem;
     }
 
-    /* oś czasu: rok nad treścią */
     .choir-timeline-item {
         flex-direction: column;
     }
